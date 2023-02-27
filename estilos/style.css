@@ -1,7 +1,50 @@
 @charset "UTF-8";
 
-/* 
-Paleta de cores
-verde #49a09d
-lilas # 5f2c82
-*/
+* {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body,html{
+    background-color: #3073A0;
+    height: 100vh;
+    width: 100vw;
+}
+
+main{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+section#login{
+    background-color: white;
+    width: 250px;
+    height: 500px;
+    border-radius: 20px;
+
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.450);
+    transition: width .3s, height .3s;
+    transition-timing-function: ease;
+    
+}
+
+section#login > div#imagem{
+    display: block;
+    background: #3073A0 url(../imagens/metal.jpg) no-repeat;
+    background-size: cover;
+    height: 200px;
+}
+
+section#login > div#formulario{
+    display: block;
+    padding: 10px;
+
+}
